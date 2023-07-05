@@ -68,6 +68,10 @@ ul{
     padding: 0;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 }
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 .HeaderNavListItem__link>span:first-child {
     font-family: 'Lato',sans-serif;
 }
@@ -157,7 +161,6 @@ video {
     object-fit: contain;
     overflow-clip-margin: content-box;
     overflow: clip;
-    width:100%;
 }
 .About__title {
     align-items: center;
@@ -189,9 +192,6 @@ video {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-}
-a {
-    text-decoration: none;
 }
 .About__button>img {
     margin-right: 5px;

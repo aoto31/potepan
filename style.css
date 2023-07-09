@@ -19,11 +19,19 @@ h2{
     padding-top: 100px;
     padding-bottom: 28px;
 }
-
-@media screen and (max-width: 767px) {
-    .FirstView__main-image--sp {
-        display:block
-        }
+.background__image--pc{
+    display: block !important;
+}
+.background__image--sp{
+    display: none !important;
+}
+@media only screen and (max-width:767px) {
+ .background__image--pc{
+    display: none !important;
+ }
+.background__image--sp{
+    display: block !important;
+ }
 }
 
 .FirstViewContent {
@@ -74,13 +82,6 @@ a:hover{
     color: #333;
     width: 176px;
 }
-@media screen and (max-width: 767px) {
-                .FirstView {
-                    background-image:none;
-                    padding-top: 0;
-                    padding-bottom: 35px
-                }
-            }
 .Header {
     width: 100%;
     position: absolute;

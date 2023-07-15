@@ -244,16 +244,7 @@ main {
     padding-right: 20px;
  }
 }
-@media screen and (max-width: 767px){
-.About__video {
-    width: 100%;
- }
-}
-@media screen and (max-width: 1024px){
-.About__video {
-    margin-bottom: 16px;
- }
-}
+
 @media screen and (max-width: 1024px){
 .About__title {
     margin-left: 0;
@@ -306,6 +297,14 @@ a:hover{
     text-decoration: none;
     text-align: center;
 }
+.FirstViewCaption {
+    color: #a2a2a4;
+    font-size: 12px;
+}
+.terms{
+    color: #a2a2a4;
+    font-size: 12px;
+}
 
 .FirstViewContent__buttons a:last-of-type {
     background-color: #fff;
@@ -318,6 +317,11 @@ a:hover{
     position: absolute;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.HeaderLogo__image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
 }
 .HeaderContainer {
     display: flex;
@@ -413,9 +417,6 @@ img {
     display: flex;
     justify-content: space-between;
 }
-.About__video {
-    width: 50%;
-}
 .About__title {
     display: flex;
     flex-direction: column;
@@ -444,8 +445,36 @@ img {
     line-height: 26px;
 }
 
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.About__video {
+    width: 50%
+}
+
+
 @media screen and (max-width: 767px){
 .FirstView__main-image--sp {
     display: block;
  }
 }
+
+@media screen and (max-width: 1024px){
+.About__video {
+    margin-bottom: 16px;
+    width: 75%;
+ }
+}
+
+@media screen and (max-width: 767px){
+.About__video {
+    width: 100%;
+ }
+}
+
+
+
+

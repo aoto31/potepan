@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    padding:0;
+    margin:0;
     color: #333;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
     font-size: 14px;
@@ -16,17 +18,25 @@ h2{
 }
 
 .FirstView {
-    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
     padding-bottom: 28px;
 }
-
+header{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:20px 0;
+    font-weight:500;
+    position:absolute
+}
 @media screen and (max-width: 1080px){
 .Header {
     background-color: #fff;
     z-index: 10;
+    position: fixed !important;
  }
 }
 
@@ -63,6 +73,11 @@ h2{
  }
 }
 
+@media screen and (max-width: 767px){
+    .HeaderLogo__image--pc{
+        display: none;
+    }
+}
 @media screen and (max-width: 767px){
 .HeaderLogo__image--sp {
     display: block;
@@ -129,6 +144,33 @@ h2{
 .HeaderNavHamburger__line:last-child {
     top: 100%;
  }
+}
+.HeaderNav{
+    display:flex;
+    justify-content:space-between;
+}
+.HeaderNav>ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 40px;
+    margin:0;
+    padding: 0;
+}
+.HeaderNavi>ul>li>a{
+    text-decoration: none;
+    text-align: center;
+}
+.HeaderNavi>ul>li>a>span{
+    display: block;
+    font-weight: 700;
+    color: #333;
+   
+}
+.HeaderNavListItem{
+    font-family: 'Lato',sans-serif;
+    font-size: 14px;
 }
 @media screen and (max-width: 1080px){
 .HeaderNavList {
@@ -321,6 +363,10 @@ a:hover{
     color: #333;
     width: 176px;
 }
+.header-first:hover , .contact-btn:hover , .main-btn-left:hover , .main-btn-right:hover,.header-left-btn:hover{
+    opacity: .8;
+    transition: .2s;
+}
 .Header {
     width: 100%;
     position: absolute;
@@ -328,6 +374,13 @@ a:hover{
 .Header{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+*{
+    word-break: break-all;
+    box-sizing: border-box;
+}
+.HeaderLogo {
+    align-self: center;
 }
 .HeaderLogo__image--pc {
     display: block;
@@ -340,6 +393,16 @@ a:hover{
     margin: 0 36px;
     max-width: 100%;
     position: relative;
+}
+@media screen and (max-width:767px){
+    .HeaderContainer{
+        max-width: 100%;
+        margin: 0 20px;
+    }
+}
+.header-left{
+    width: 185px;
+    
 }
 main {
     display: block;

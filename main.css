@@ -1,0 +1,23 @@
+html,body{
+    font-size: 16px;
+}
+.containar{
+    width: 540px;
+    margin:0 auto;
+    padding:1.5rem;
+}
+#time{
+    font-size:3rem;
+    text-align:center;
+    padding:1rem;
+    border-redius:1rem;
+    margin:.5rem;
+}
+.buttons{
+    font-size: 3rem;
+    text-align: center;
+}
+#start,#stop,#reset{
+    font-size:1.5rem;
+    border-radius:.3rem;
+}

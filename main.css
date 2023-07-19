@@ -4,7 +4,7 @@ html,body{
 .containar{
     width: 540px;
     margin:0 auto;
-    padding:1.5rem;
+    padding:1.5rem ;
 }
 #time{
     font-size:3rem;

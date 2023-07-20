@@ -4,13 +4,11 @@ html,body{
 .containar{
     width: 540px;
     margin:0 auto;
-    padding:1.5rem ;
 }
 #time{
     font-size:3rem;
     text-align:center;
     padding:1rem;
-    border-redius:1rem;
     margin:.5rem;
 }
 .buttons{

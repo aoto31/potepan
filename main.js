@@ -7,8 +7,6 @@ const resetButton = document.getElementById("reset");
 
 let startTime = 0;
 let stopTime = 0;
-let elapsedTime = 0;
-let currentTime = "";
 let timeoutID;
 
 function displayTime(){

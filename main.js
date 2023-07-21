@@ -4,7 +4,6 @@ const stopButton = document.getElementById("stop");
 const resetButton = document.getElementById("reset");
 
 
-
 let startTime = 0;
 let stopTime = 0;
 let timeoutID;
